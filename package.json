@@ -1,0 +1,15 @@
+{
+  "name": "node-iris",
+  "version": "0.0.0",
+  "description": "An attempt at an IRIS shell",
+  "main": "fiddling.js",
+  "dependencies": {
+    "express": "^4.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S.McKinnon",
+  "license": "ISC"
+}
