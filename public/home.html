@@ -1,54 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 <script>
-function doPost() {	var http = new XMLHttpRequest();
-var url = "accounts/accts";
-var params = "userid=jbm&pass=macman";
-http.open("POST", url, true);
-//Send the proper header information along with the request
-http.setRequestHeader("Content-type", "application/xml");
-http.setRequestHeader("Content-length", params.length);
-http.setRequestHeader("Connection", "close");
-http.onreadystatechange = function() {//Call a function when the state changes.
-if(http.readyState == 4 && http.status == 200) {
-alert(http.responseText);
+function doPost(nameP, passP) {
+    var http = new XMLHttpRequest();
+    var url = "process-contact";
+    var params = "userid="+nameP+"&pass="+passP;
+    http.open("POST", url, true);
+    //Send the proper header information along with the request
+    http.setRequestHeader("Content-type", "text/plain");
+    http.setRequestHeader("Content-length", params.length);
+    http.setRequestHeader("Connection", "close");
+    http.onreadystatechange = function() { //Call a function when the state changes.
+        if (http.readyState == 4 && http.status == 200) {
+            alert(http.responseText);
+        }
+    }
+    http.send(params);
 }
-}
-http.send(params);
-}
-function buttClick(theForm){
-var name;
-var pass;
-name = (theForm.userId ? theForm.userId.value : "---");
-pass = (theForm.passWord ? theForm.passWord.value : "---" );
-alert(name.toString() + ":" + pass.toString());
-doPost();
+
+function buttClick(theForm) {
+    var name;
+    var pass;
+    name = (theForm.userId ? theForm.userId.value : "---");
+    pass = (theForm.passWord ? theForm.passWord.value : "---");
+    alert(name.toString() + ":" + pass.toString());
+    doPost(name,pass);
 }
 // document.getCreds.loginButton.onClick = buttClick(document.getCreds);
 </script>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>IRIS Report Access</title></head>
 <body>
-<div style="text-align: center;">
-<h2>IRIS Report Access</h2>
-</div>
-<br>
-<form name="getCreds">
-<table style="text-align: left; width: 100%; height: 60px;" border="0" cellpadding="2" cellspacing="0">
-<tbody>
-<tr>
-<td style="width: 50%; text-align: right;">Login:
-&nbsp; </td>
-<td><input size="25" name="userId" value="user id"><br>
-</td>
-</tr>
-<tr>
-<td style="width: 50%; text-align: right;">Password:</td>
-<td><input value="password" size="25" name="passWord" type="password"><br>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<div style="text-align: center;"><input value="Login" name="loginButton" onclick="buttClick(document.getCreds);" type="button"></div>
-</form>
-</body></html>
+    <div style="text-align: center;">
+        <h2>IRIS Report Access</h2>
+    </div><br>
+
+    <form id="getCreds" name="getCreds">
+        <table border="0" cellpadding="2" cellspacing="0" style=
+        "text-align: left; width: 100%; height: 60px;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%; text-align: right;">Login:&nbsp;</td>
+                    <td><input name="userId" size="25" value="user id"><br></td>
+                </tr>
+                <tr>
+                    <td style="width: 50%; text-align: right;">Password:</td>
+                    <td><input name="passWord" size="25" type="password" value="password"><br></td>
+                </tr>
+            </tbody>
+        </table><br>
+
+        <div style="text-align: center;">
+            <input name="loginButton" onclick="buttClick(document.getCreds);"
+            type="button" value="Login">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRIS Reporter</title>
+    <script>
+
+
+		function buttClick(theForm) {
+		    var name;
+		    var pass;
+		    name = (theForm.userId ? theForm.userId.value : "---");
+		    pass = (theForm.passWord ? theForm.passWord.value : "---");
+		    alert(name.toString() + ":" + pass.toString());
+		    document.getElementById("getCreds").submit();
+		}
+		// document.getCreds.loginButton.onClick = buttClick(document.getCreds);
+	</script>
+</head>
+
+<body>
+	<header><div align="center"><img src="/img/miniphone.jpg" alt="Phone"></div></header>
+    {{{body}}}
+</body>
+</html>

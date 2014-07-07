@@ -1,0 +1,484 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Complete",
+				"CompletedNumbers"
+			],
+			[
+				"Error",
+				"ErrorList"
+			],
+			[
+				"N",
+				"Number"
+			],
+			[
+				"tele",
+				"Telephone"
+			],
+			[
+				"Telepo",
+				"TelephoneNumberDetails"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "scratchpad\n\n/{siteid}: !include siteid/siteid.raml\n\nIn body - application  xml\n            description: |\n                This \"import to available\" order type is used to bring numbers into the Bandwidth Dashboard system, and as such is not an order in the conventional sense.\n\nToDo:\n	/accountid/orders/orders.raml\n\n\n{{base-url}}/accounts/{{myaccount}}/lidbs/1d863522-c9bf-430c-8e79-cc63cad04a1d\n\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<LidbOrderResponse>\n    <Status>\n        <Code>200</Code>\n        <Description>Order is pending. Please check the status of your order later.</Description>\n    </Status>\n    <ProcessingStatus>OPEN</ProcessingStatus>\n    <ErrorList/>\n    <LidbOrder>\n        <id>9b5ac2c2-f873-4cdd-99b1-5d9c804e51fd</id>\n        <TelephoneNumberList>\n            <TelephoneNumber>9199998830</TelephoneNumber>\n        </TelephoneNumberList>\n        <SubscriberInformation>Steve McKinnon</SubscriberInformation>\n        <UseType>RESIDENTIAL</UseType>\n        <Visibility>PUBLIC</Visibility>\n    </LidbOrder>\n</LidbOrderResponse>\n\n\n<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<LidbOrderResponse>\n    <Status>\n        <Code>200</Code>\n        <Description>Validation Failed. Please check your input parameters.</Description>\n    </Status>\n    <ProcessingStatus>EXCEPTION</ProcessingStatus>\n    <ErrorList>\n        <Error>\n            <TelephoneNumber>8045030098</TelephoneNumber>\n            <Code>11012</Code>\n            <Description>Number does not exist</Description>\n        </Error>\n    </ErrorList>\n    <LidbOrder>\n        <id>1d863522-c9bf-430c-8e79-cc63cad04a1d</id>\n        <TelephoneNumberList>\n            <TelephoneNumber>8045030098</TelephoneNumber>\n        </TelephoneNumberList>\n        <SubscriberInformation>Steve McKinnon</SubscriberInformation>\n        <UseType>RESIDENTIAL</UseType>\n        <Visibility>PUBLIC</Visibility>\n    </LidbOrder>\n</LidbOrderResponse>",
+			"settings":
+			{
+				"buffer_size": 1925,
+				"line_ending": "Windows",
+				"name": "scratchpad"
+			}
+		},
+		{
+			"contents": "\nNotes on the HTML Design\n\nThe basic structure of the paths element is to process the top-level description first, the subtending methods next, and then any follow-on paths later.\nFor the paths element we will need to retain the aggregate path as an input, as well as a level value.\nFor most elements they will be independent of the heading level of the overall path.\n\nnote - <textarea> might be useful.\n\n\n.xml {\n    background-color:#EEEEEE; border:2px solid red;\n    border-radius:0.5em;\n    font-size:14px;\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif;\n    box-sizing:border-box;\n    width:70%;\n    }\n.none {}\n.information {font-style:italic;}\n.title  {\n    text-align:center;\n    text-decoration:underline;\n}\n.pathname {text-align:center;}\n.description {\n    border:1px solid blue;\n    border-radius:0.5em;\n    font-size:14px;\n    font-family: \"Trebuchet MS\", Helvetica, sans-serif;\n    box-sizing:border-box;\n    width:70%;\n}\n.httpMethod {\n    text-decoration:bold;\n    font-size:18px;\n    }\n.responses {\n    text-decoration:bold;\n    font-size:18px;\n    }",
+			"settings":
+			{
+				"buffer_size": 1071,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/smckinnon/Documents/GitHub/raml-printer/.gitignore",
+			"settings":
+			{
+				"buffer_size": 2805,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "meadowlark.js",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/views/layouts/main.handlebars",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/views/404.handlebars",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/views/500.handlebars",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/views/about.handlebars",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/views/home.handlebars",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/public/about.html",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/public/home.html",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/iris.raml",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/meadowlark.js",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/package.json",
+		"/C/Users/smckinnon/Documents/GitHub/node-iris/.gitignore",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/accountid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/disconnects/disconnects.raml",
+		"/C/Users/smckinnon/Desktop/disconnectsbak.raml",
+		"/C/Users/smckinnon/Box Sync/API Spec/RAML Templates/template.raml",
+		"/C/Users/smckinnon/Desktop/disconnects.raml",
+		"/C/Users/smckinnon/Desktop/actions-offline.txt",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/importtoaccount.raml",
+		"/C/Users/smckinnon/Box Sync/IRIS 2014/IRIS Requirements/Stories/CNAM Update - LIDB/draft/IRIS-4551  - Update the sftp file location for CNAM exchanges",
+		"/C/Users/smckinnon/Box Sync/IRIS 2014/IRIS Requirements/Stories/CNAM Update - LIDB/draft/IRIS-4645  - API - Complete the CNAM Update  LIDB Order API",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/lidbs/lidbid/history/history.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/lidbs/lidbid/lidbid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/lidbs/lidbs.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/sippeerid.raml",
+		"/C/Users/smckinnon/Downloads/lidbid.raml",
+		"/C/Users/smckinnon/Downloads/lidbs.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/target/generated-resources/raml/iris.min.external.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/target/generated-resources/raml/iris.min.internal.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeers.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/origination/settings/originationsettings.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/edgemanagement/settings/edgemanagementsettings.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/orders/orderid/orderid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/orders/orderid/history/orderhistory.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/orders/orders.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/orders/orderid/histroy/orderhistory.raml",
+		"/C/Users/smckinnon/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/orders/orderid/orders.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/orders/orders.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/edgemanagement/edgemanagement.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/origination/origination.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/origination/tntotals/tntotals.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/termination/termination.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/tollfree/tntotals/tntotals.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/products.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/sms/sms.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/products/origination/tntotals/tntotals2.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/testapi/testapi.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/target/generated-resources/raml/iris.min.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/testapi/notestest/notestest.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/testapi/mockpot/portouts/portout.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/testapi/notestest/template.raml",
+		"/C/Users/smckinnon/Documents/Sublime Text Projects/raml.sublime-project",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/batches/batches.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/batches/batchid/batchid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/ita-orderid/ita-orderid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/ita-orderid/batches/batches.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/accountid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/importtoaccount/importtoaccount.raml",
+		"/C/Users/smckinnon/Documents/GitHub/raml-printer/test1.html",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/products/origination/origination.raml",
+		"/C/Users/smckinnon/Desktop/iris.min.raml",
+		"/C/Users/smckinnon/Desktop/tn-fixed.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/tns/tn/tn.raml",
+		"/C/Users/smckinnon/My Box Files/API Spec/RAML Templates/template.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/availablenumbers/orders/orders.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/products/edgemanagement/edgemanagement.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/tns/tns.raml",
+		"/C/Users/smckinnon/Desktop/Cipher.java",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/orders/orders.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/tns/tn/tn.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/siteid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeers.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/sippeerid.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/lnpchecker/lnpchecker.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/sippeers/sippeerid/tns/tns.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/sites.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/accounts/accountid/sites/siteid/siteid.raml",
+		"/C/Users/smckinnon/Desktop/NCSU Spring.txt",
+		"/C/Users/smckinnon/Desktop/iris.min-0228.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/portouts/portouts.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/portins/portins.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/cities/cities.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/iris.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/users/userid/userid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/users/users.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accounts.raml",
+		"/C/Users/smckinnon/Desktop/diff.txt",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/tns/tns.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/accounts/accountid/lnpchecker/lnpchecker.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/availablenumbers/orders/orderid/orderid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/ratecenters/ratecenters.raml",
+		"/C/Users/smckinnon/My Box Files/API Spec/Path Map/AllValidPaths.txt",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/portouts/portouts.raml",
+		"/C/Users/smckinnon/Downloads/77fa4259-6be0-4822-b6c1-8b8e20b4ae2a",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/portins/portins.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/portouts/portins.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/availablenumbers/totals/totals.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/availablenumbers/availablenumbers.raml",
+		"/C/Users/smckinnon/Repo/Iris/apidocs/src/main/resources/raml/availablenumbers/orders/orderid/orderid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/availablenumbers/availablenumbers.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/users/users.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/users/userid/userid.raml",
+		"/C/Users/smckinnon/Repo/IRIS/apidocs/src/main/resources/raml/users/userid/roles/roles.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/availablenumbers/orders/orders.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/availablenumbers/totals/totals.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/availablenumbers/orderid/orderid.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/agingnumbers/agingnumbers.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/inserviceNumbers/inserviceNumbers.raml",
+		"/C/Users/smckinnon/Downloads/noname.eml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/availablenumbers/availablenumbers.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accounts.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/users/userid/userid.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/users/users.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/iris.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/sites/sites.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/accountid.raml",
+		"/C/Users/smckinnon/Repo/apidocs/target/m2e-wtp/web-resources/raml/iris.min.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/products.raml",
+		"/C/Users/smckinnon/Repo/apidocs/target/generated-resources/raml/iris.min.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/uctrunking/settings/settings.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/uctrunking/uctrunking.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/uctrunking/settings/uctrunking.raml",
+		"/C/Users/smckinnon/Desktop/uctrunking/uctrunking.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/tollfree/tollfree.raml",
+		"/C/Users/smckinnon/My Box Files/API Spec/scratchpad.txt",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/origination/origination.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/sms/sms.raml",
+		"/C/Users/smckinnon/Repo/apidocs/src/main/resources/raml/accounts/accountid/products/termination/termination.raml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\smckinnon\\Box Sync\\API Spec\\RAML Templates"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[",
+			"scope",
+			">",
+			"<",
+			"testapi",
+			":",
+			": ",
+			":",
+			"111111",
+			"111111111",
+			"displayName",
+			"dosi",
+			"dois",
+			"/account",
+			"/accounts",
+			"getOutputPrintStream",
+			": ",
+			":",
+			"Add a role",
+			"/portouts",
+			"/portins",
+			"*+orders+*",
+			"New number orders",
+			"/orders",
+			":",
+			"portouts",
+			"Line Feature Order",
+			"LFO",
+			"@Path(\"/\")",
+			":",
+			"portins",
+			"Integer",
+			"@QueryParam(TelephoneNumberReportFilter.ParameterName.",
+			"@QueryParam(ReportFilter.ParameterName.",
+			"tns",
+			"#",
+			"=",
+			"/vi",
+			"Account",
+			"account",
+			"",
+			"	",
+			"mybwc",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"&gt;",
+			"&lt;",
+			"-",
+			"Line Feature Project",
+			"LFP",
+			"-",
+			"integer",
+			" ",
+			"|",
+			"	",
+			"|"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 1925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"auto_name": "scratchpad",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 1071,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								607,
+								607
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/smckinnon/Documents/GitHub/raml-printer/.gitignore",
+					"settings":
+					{
+						"buffer_size": 2805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "meadowlark.js",
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/smckinnon/Documents/Sublime Text Projects/2.1 EPICS Notes.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true
+}

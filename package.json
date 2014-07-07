@@ -4,7 +4,8 @@
   "description": "An attempt at an IRIS shell",
   "main": "fiddling.js",
   "dependencies": {
-    "express": "^4.4.5"
+    "express": "^4.4.5",
+    "express3-handlebars": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
